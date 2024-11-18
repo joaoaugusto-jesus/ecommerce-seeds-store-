@@ -72,7 +72,7 @@ const App = () => {
   return (
     <BrowserRouter>
     <Nav search={search} setSearch={setSearch} searchProduct={searchProduct}/>
-    <Rout shop={shop} Filter={Filter} allcaterfilter={allcaterfilter} addToCart={addToCart} cart={cart}/>
+    <Rout shop={shop} Filter={Filter} allcaterfilter={allcaterfilter} addToCart={addToCart} cart={cart} setCart={setCart}/>
     <Footer />
     </BrowserRouter>
   )
