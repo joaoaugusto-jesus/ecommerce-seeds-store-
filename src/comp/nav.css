@@ -1,0 +1,196 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;   
+}
+
+.header{
+
+    width: 100%;
+}
+
+.header .top_header
+{
+    max-width: 100%;
+    display: flex;
+    padding: 20px 20px;
+    background: #f6f7f8;
+}
+
+.header .top_header .icon
+{
+    margin-left: 20px;
+    color: #ababab;
+    font-size: 16px;
+}
+
+.header .top_header .info p 
+{
+    margin-left: 10px;
+    color: #8a8a8a;
+}
+
+.header .midHeader
+{
+    display: flex;
+    padding: 20px 40px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.header .midHeader .logo img 
+{
+    height: 45px;
+    width: auto;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.header .midHeader .searchBox input
+{
+    padding: 10px 10px;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 250px;
+    border: none;
+    background: #f6f7f8;
+}
+
+.header .midHeader .searchBox button
+{
+    padding: 10px 10px;
+    border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid#cd1e76;
+    width: 50px;
+    background: #cd1e76;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: 0.5s;
+    font-weight: 600;
+
+}
+
+.header .midHeader .searchBox button:hover
+{
+    background: #fed700;
+    color: #cd1e76;
+}
+
+.header .midHeader .user
+{
+    display: flex;
+    margin-right: 30px;
+}
+
+.header .midHeader .user .icon
+{
+    margin-right: 10px;
+}
+
+.header .midHeader .user .icon .btn button
+{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    cursor: pointer;
+}
+
+.header .lastHeader
+{
+    
+    padding: 10px 10px;
+    display: flex;
+    background: #232323;
+    justify-content: space-between;
+}
+
+.header .lastHeader .userProfile 
+{
+    display: flex;
+    margin-top: 10px;
+}
+
+.header .lastHeader .userProfile .icon
+{   
+    height: 18px;
+    width: auto;
+    padding: 10px 10px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.header .lastHeader .userProfile .info
+{
+    margin-left: 10px;
+}
+
+.header .lastHeader .userProfile .info h2
+{
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
+
+.header .lastHeader .userProfile .info p
+{
+    color: #ababab;
+    font-size: 14px;
+    margin: 0;
+}
+
+.header .lastHeader .nav
+{
+    margin-top: 10px;
+}
+
+.header .lastHeader .nav ul
+{
+    display: flex;
+}
+
+.header .lastHeader .nav ul li
+{
+    list-style: none;
+}
+
+.header .lastHeader .nav ul li .link
+{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+
+}
+
+.header .lastHeader .nav ul li .link:hover
+{
+    color: #fed700;
+}
+
+.header .lastHeader .offer
+{
+    height: 20px;
+    margin-right: 20px;
+    padding: 20px 20px;
+    background: #fed700;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.header .lastHeader .offer p
+{
+margin-top: 5px;
+text-transform: uppercase;
+color: #232323;
+font-weight: 600;
+font-size: 14px;
+}

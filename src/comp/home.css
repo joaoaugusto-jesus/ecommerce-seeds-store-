@@ -1,0 +1,609 @@
+*
+{
+    margin: 30px;
+    padding: 6px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.home
+{
+    width: 100%;
+    
+}
+
+.home .topBanner
+{
+    max-width: 100%;
+   
+    margin-top: 10px;
+    background-image: url('../images/Novo Projeto.webp');
+    background-repeat:no-repeat;
+    background-color: #bcc7bb;
+    background-size: cover;
+    padding: 50px 60px;
+}
+
+.home .topBanner .contant
+{
+    width: 100%;
+    position: relative;
+    top: 20%;
+    padding: 10px 0px;
+}
+
+.home .topBanner .contant h3
+{
+    text-transform: capitalize;
+    color: #cd1e76;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.home .topBanner .contant h2
+{
+    text-transform: uppercase;
+    color: #232323;
+    letter-spacing: 1px;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.home .topBanner .contant p
+{
+    color: #232323;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.home .topBanner .contant .link 
+{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    background: #fed700;
+    color: #232323;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.home .topBanner .contant Link:hover
+{
+    color: #fed700;
+    background: #cd1e76;
+}
+
+.home .trending
+{
+    
+    width: 100%;
+    
+}
+
+.home .trending .container
+{
+    max-width: 100%;
+    display: flex;
+    
+}
+
+.home .trending .container .leftBox
+{
+
+    width: 100%;
+}
+
+.home .trending .container .leftBox .header
+{
+    margin-top: 20px;
+    display: flex;
+    max-width: 80%;
+    background: #f6f7f8;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 14px;
+}
+
+.home .trending .container .leftBox .header .heading h2
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #232323;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.home .trending .container .leftBox .header .cate
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.home .trending .container .leftBox .header .cate h3
+{
+    font-size: 14px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #232323;
+    background-color: #cd1e76;
+    border-radius: 4px;
+    padding: 4px;
+    color: #f6f7f8;
+
+}
+
+.home .trending .container .leftBox .header .cate h3:hover
+{
+    color: #fed700;
+}
+
+.home .trending .container .leftBox .products
+{
+   
+    max-width: 100%;
+
+}
+
+.home .trending .container .leftBox .products .container
+{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+   
+}
+.home .trending .container .leftBox .products button
+{
+    margin-top: 20px;
+    margin-left: 45%;
+    padding: 10px 30px;
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    background: #cd1e76;
+
+
+}
+.home .trending .container .leftBox .products .container .box
+{
+    width: 195px;
+    height: 295px;
+    /* padding: 10px 10px; */
+    border: 4px solid #f6f7f8;
+    margin-top: 20px;
+    margin-right: 10px;
+     overflow: hidden;
+    border-radius: 5px;
+}
+.home .trending .container .leftBox .products .container .box .imgBox
+{
+    display: flex;
+}
+.home .trending .container .leftBox .products .container .box .imgBox img
+{
+    width: 190px;
+    height: auto;
+    object-fit: cover;
+}
+
+.home .trending .container .leftBox .products .container .box .imgBox .icon
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.home .trending .container .leftBox .products .container .box:hover .imgBox .icon
+{
+    margin-left: -25%;
+}
+
+.home .trending .container .leftBox .products .container .box .imgBox .iconBox
+{
+    padding: 10px 10px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1;
+    background: #fff;
+    color: #cd1e76;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.home .trending .container .leftBox .products .container .box .imgBox .iconBox:hover
+{
+    background: #fff;
+    color: #cd1e76;
+}
+
+.home .trending .container .leftBox .products .container .box .info
+{
+    padding: 10px 10px;
+    margin-left: 10px;
+}
+
+.home .trending .container .leftBox .products .container .box .info h3
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #cd1e76;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+.home .trending .container .leftBox .products .container .box .info p
+{
+    color:#fed700;
+    margin-top: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+.home .trending .container .leftBox .products .container .box .info .btn
+{
+    margin-top: 10px;
+    align-items: center;
+    padding: 5px 20px;
+    margin-left: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    background: #fed700;
+    color: #232323;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.home .trending .container .leftBox .products .container .box .info .btn:hover
+{
+    background:#cd1e76;
+    color: #bcc7bb;
+}
+
+.home .trending .container .rightBox
+{
+    padding: 10px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.home .trending .container .rightBox .right-container
+{
+    max-width: 100%;
+}
+
+.home .trending .container .rightBox .right-container .testimonial
+{
+    width: 100%;
+    border: 4px solid #f6f7f8;
+    
+}
+
+.home .trending .container .rightBox .right-container .testimonial .head
+{
+    padding: 10px 10px;
+    text-align: center;
+    background: #f6f7f8;
+
+}
+
+.home .trending .container .rightBox .right-container .testimonial .header .head h3
+{
+    text-align: center;
+    color: #232323;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.home .trending .container .rightBox .right-container .testimonial .detail
+{
+    padding: 10px 10px;
+}
+
+.home .trending .container .rightBox .right-container .testimonial .detail img
+{
+    
+   
+    width: 200px;
+    height: auto;
+}
+
+.home .trending .right-container .rightBox .right-container .testimonial .detail .info
+{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.home .trending .container .rightBox .right-container .testimonial .detail .info h3
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #232323;
+}
+
+.home .trending .container .rightBox .right-container .testimonial .detail .info h4
+{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #cd1e76;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.home .trending .container .rightBox .right-container .testimonial .detail .info p
+{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #232323;
+    font-size: 14px;
+}
+
+
+.home .trending .container .rightBox .right-container .newsletter
+{
+    width: 91%;
+    background:#f6f7f8;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+
+.home .trending .container .rightBox .right-container .newsletter .head
+{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.home .trending .container .rightBox .right-container .newsletter .head h3
+{
+    text-align: center;
+    color: #232323;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.home .trending .container .rightBox .right-container .newsletter .form
+{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.home .trending .container .rightBox .right-container .newsletter .form p
+{
+    text-align: center;
+    text-transform: capitalize;
+    color: #8a8a8a;
+}
+
+.home .trending .container .rightBox .right-container .newsletter .form input
+{
+    margin-top: 10px;
+    width: 97.9%;
+    background: none;
+    outline: none;
+    border: 1px solid #8a8a8a;
+    color: #232323;
+}
+
+.home .trending .container .rightBox .right-container .newsletter .form button
+{
+    margin-top: 10px;
+    margin-left: 60px;
+    padding: 10px 10px;
+    border: none;
+    background: none;
+    outline: none;
+    background: #fed700;
+    color: #232323;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.home .trending .container .rightBox .right-container .newsletter .form .iconBox
+{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.home .trending .container .rightBox .right-container .newsletter .form .iconBox .icon
+{
+    padding: 10px 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #cd1e76;
+    color: #cd1e76;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.home .trending .container .rightBox .right-container .newsletter .form .iconBox .icon:hover
+{
+    color: #f6f7f8;
+    background: #cd1e76;
+}
+
+.home .banners
+{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.home .banners .container
+{
+    max-width: 100%;
+    display: flex;
+}
+
+.home .banners .container .leftBox
+{
+    width: 24%;
+}
+.home .banners .container .leftBox img
+{
+    width: 100%;
+    
+    
+}
+
+.home .banners .container .rightBox
+{
+    width: 75%;
+}
+
+.home .banners .container .rightBox .top
+{
+    max-width: 100%;
+    height: 575px;
+    display: flex;
+    justify-content: end;
+
+}
+.home .banners .container .rightBox img
+{
+    object-fit: cover;
+    width: 98%;
+    height: auto;
+}
+
+.home .producType 
+{
+    
+    width: 99%;
+    
+}
+
+.home .producType .container
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.home .producType .container .box
+{
+    width: 360px;
+    height: auto;
+    border: 3px solid #f6f7f8;
+    padding: 10px 10px;
+    
+}
+
+.home .producType .container .box .header 
+{
+   width: 95%;
+   height: 50px;
+   background: #f6f6f6;
+   padding: 10px 10px;
+}
+
+.home .producType .container .box .header h2
+{
+    color: #232323;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.home .producType .container .box  .productBox
+{
+    width: 100%;
+    height: 150px;
+    padding: 10px 10px;
+    border: 1px solid #f6f7f8;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.home .producType .container .box .productBox .imgBox {
+    width: 150px;
+    height: 150px;
+}
+.home .producType .container .box .productBox .imgBox img
+{   
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    
+}
+
+.home .producType .container .box .productBox .imgBox .detail
+{
+    margin-left: 30px;
+    border:2px solid #232323;
+}
+
+.detail h3
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #8a8a8a;
+   
+}
+
+ .detail p
+{
+    margin-top: 5px;
+    color: #cd1e76;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.detail .icon
+{
+    margin-top: 10px;
+}
+
+.icon button
+{
+    background: none;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    border: 2px solid #f6f7f8;
+    margin-left: 10px;
+    border-radius: 50%;
+    color: #8a8a8a;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.icon button:hover
+{
+    background: #f6f6f6;
+    
+    color: #232323;
+    
+   
+}

@@ -1,0 +1,273 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.shop
+{
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.shop h2
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #232323;
+    font-size: 32px;
+    font-weight: 300;
+
+}
+
+.shop p
+{
+    margin-top: 5px;
+    color: #8a8a8a;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.shop .container
+{
+    max-width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.shop .container .leftBox
+{
+    width: 25%;
+
+}
+
+.shop .container .leftBox .category
+{
+    border: 3px solid #f6f6f6;
+    width: 100%;
+}
+
+.shop .container .leftBox .category .header
+{
+    
+    padding: 2px 2px;
+    background: #f6f6f6;
+}
+.shop .container .leftBox .category .header h3
+{   
+    margin-left: 10px;
+    font-size: 16px;
+    color: #232323;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+}
+
+.shop .container .leftBox .category .box 
+{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.shop .container .leftBox .category .box ul
+{ 
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.shop .container .leftBox .category .box ul li
+{
+   
+    list-style: none;
+    margin-left: 10px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8a8a8a;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.shop .container .leftBox .category .box ul li
+{
+    color: #232323;
+}
+
+.shop .container .leftBox .banner .imgBox img
+{   
+    margin-top: 20px;
+    width: 220px;
+    object-fit: cover;
+    border: 1px solid #232323;
+}
+
+.shop .container .rightBox 
+{
+    width: 74%;
+}
+
+.shop .container .rightBox .banner
+{
+    max-width: 100%;
+}
+
+.shop .container .rightBox .banner .imgBox
+{   
+    margin-left: 15px;
+    padding: 5px;
+    
+}
+.shop .container .rightBox .banner .imgBox img
+{   
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    
+}
+
+.shop .container .rightBox .productBox
+{
+    max-width: 100%;
+    padding: 10px 20px;
+    
+}
+
+.shop .container .rightBox .productBox
+{
+    color: #8a8a8a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 22px;
+    
+
+}
+
+.shop .container .rightBox .productBox h2
+{
+    color: #232323;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.shop .container .rightBox .productBox .productContainer
+{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    
+ 
+}
+
+.shop .container .rightBox .productBox .productContainer .box
+{   
+    padding: 10px 20px;
+    width: 250px;
+    
+    overflow: hidden;
+    border: 2px solid #f6f6f6;
+    margin-top: 20px;
+    margin-left: 15px;
+    
+}
+
+.shop .container .rightBox .productBox .productContainer .box .imgBox
+{
+  display: flex;
+}
+
+.shop .container .rightBox .productBox .productContainer .box .imgBox img
+{
+    width: 100%;
+    height: 140px;
+    margin:0px 10px 0px 30px;
+    
+}
+
+.shop .container .rightBox .productBox .productContainer .box .imgBox .icon
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    margin-left:130px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.shop .container .rightBox .productBox .productContainer .box .imgBox .icon li
+{
+    list-style: none;
+    border: 2px solid #f6f6f6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 10px;
+   
+    padding: 10px 10px;
+    color: #8a8a8a;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.shop .container .rightBox .productBox .productContainer .box .imgBox .icon li:hover 
+{
+    color: #fff;
+    background-color: #cd1e76;
+   
+}
+.shop .container .rightBox .productBox .productContainer .box:hover .icon
+{
+    margin-left: -30px;
+}
+
+.shop .container .rightBox .productBox .productContainer .box .detail
+{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.shop .container .rightBox .productBox .productContainer .box .detail h3
+{
+    text-align: center;
+    color: #232323;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.shop .container .rightBox .productBox .productContainer .box .detail p
+{
+    margin-top: 5px;
+    text-align: center;
+    color: #cd1e76;
+    font-size: 16px;
+}
+
+.shop .container .rightBox .productBox .productContainer .box .detail button
+{
+    margin-top: 10px;
+    margin-left: 25%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #232323;
+    background: #fed700;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.shop .container .rightBox .productBox .productContainer .box .detail button:hover
+{
+    color: #fed700;
+    background: #232323;
+}
