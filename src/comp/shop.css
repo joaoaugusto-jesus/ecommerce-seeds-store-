@@ -6,6 +6,36 @@
     box-sizing: border-box;
 }
 
+.productDetail
+{
+    width: 900px;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    left: 170px;
+    background: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.24)0px 3px 8px;
+    border: 1px solid #8a8a8a;
+    border-radius: 5px;
+    
+}
+
+.productDetail .closeBtn
+{
+    float: right;
+    border: none;
+    outline: none;
+    background: none;
+    background: #cd1e76;
+    cursor: pointer;
+    font-size: 22px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 35px;
+    height: 35px;
+    
+}
+
 .shop
 {
     width: 100%;
@@ -271,3 +301,4 @@
     color: #fed700;
     background: #232323;
 }
+

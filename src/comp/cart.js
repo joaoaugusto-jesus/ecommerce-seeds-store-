@@ -26,6 +26,10 @@ const Cart = ({ cart, setCart }) => {
       const removeItem = (id) => {
         setCart(cart.filter((item) => item.id !== id));
     };
+
+    // Total price
+
+    const total = cart.reduce((price, item) => price + item.qty * item.price, 0)
   return (
     <div className='cart'>
         <h3># Cart</h3>
@@ -75,6 +79,18 @@ const Cart = ({ cart, setCart }) => {
                     )
                 })
             }
+        </div>
+        <div className='bottom'>
+            {
+                cart.length > 0 &&
+                <> 
+                <div className='Total'>
+                    <h4>Sub Total: €{total}</h4>
+            </div>
+            <button>checkout</button>
+            </>
+            }
+           
         </div>
     </div>
   )

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import Homeproduct from './home_products';
 import {FaEye, FaHeart, FaFacebook, FaTwitter, FaInstagramSquare, FaYoutube, FaShoppingCart} from "react-icons/fa";
 
-const Home = () => {
+const Home = ({addToCart}) => {
   // Product category
   const [newProduct, setNewProduct] = useState(Homeproduct);
   const [featuredProduct, setFeaturedProduct] = useState(Homeproduct);
@@ -108,7 +108,7 @@ const Home = () => {
                             <div className='info'>
                               <h3>{curElm.Name}</h3>
                               <p>${curElm.price}</p>
-                             <button className='btn'>Add to cart</button>
+                             <button className='btn' onClick={() => addToCart (curElm)}>Add to cart</button>
                             </div>
                           </div>
                        
@@ -201,7 +201,7 @@ const Home = () => {
                                <div className='icon'>
                                 <button> <FaEye /></button>
                                 <button> <FaHeart /></button>
-                                <button> <FaShoppingCart /></button>
+                                <button onClick={() => addToCart (elm)}> <FaShoppingCart /></button>
                                </div>
                               </div>
                             </div>
@@ -231,7 +231,7 @@ const Home = () => {
                                <div className='icon'>
                                 <button> <FaEye /></button>
                                 <button> <FaHeart /></button>
-                                <button> <FaShoppingCart /></button>
+                                <button onClick={() => addToCart (elm)}> <FaShoppingCart /></button>
                                </div>
                               </div>
                             </div>
@@ -261,7 +261,7 @@ const Home = () => {
                                <div className='icon'>
                                 <button> <FaEye /></button>
                                 <button> <FaHeart /></button>
-                                <button> <FaShoppingCart /></button>
+                                <button onClick={() => addToCart (elm)}> <FaShoppingCart /></button>
                                </div>
                               </div>
                             </div>

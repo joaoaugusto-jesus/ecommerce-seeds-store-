@@ -4,10 +4,49 @@ import novo from '../images/Novo Projeto.webp'
 import terra from '../images/terra.webp'
 import { FaHeart } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io5";
+import { IoMdClose } from "react-icons/io";
+import { useState } from 'react';
+import Homeproduct from './home_products';
+
 
 const Shop = ({shop, Filter, allcaterfilter, addToCart}) => {
     console.log("Shop Products:", shop);
+    // Toggle Product deail
+
+    const [showDetail, setShowDetail] = useState(false);
+    // Detail page data
+
+    const [detail, setDetail] = useState([]);
+
+
+
+    // Showimg detail box
+    const detailpage = (product) => {
+        setDetail([{product}])
+        setShowDetail(true)
+    }
+    console.log(setDetail())
+    const closeDetails = () => {
+        setShowDetail(false)
+    }
   return (
+   <>
+   {
+    showDetail ?
+    <>
+    <div className='productDetail'>
+        <button className='closeBtn'onClick={closeDetails}>
+        <IoMdClose />
+        </button>
+        <div className='container'>
+            <div className='imgBox'>
+                <img src={Homeproduct.images} alt=''></img>
+            </div>
+        </div>
+   </div>
+    </>
+    : null
+   }
    
    <div className='shop'>
         <h2># shop</h2>
@@ -60,7 +99,7 @@ const Shop = ({shop, Filter, allcaterfilter, addToCart}) => {
                                                 <li>
                                                     <FaHeart /> 
                                                 </li>
-                                                <li>
+                                                <li onClick={() => detailpage (curElm)}>
                                                     <IoEyeSharp /> 
                                                 </li>
                                           </div>
@@ -68,7 +107,7 @@ const Shop = ({shop, Filter, allcaterfilter, addToCart}) => {
                                         <div className='detail'>
                                             <h3>{curElm.Name}</h3>
                                             <p>€ {curElm.price}</p>
-                                            <button onClick={() => addToCart(curElm) }>Add to cart</button>
+                                            <button onClick={detailpage }>Add to cart</button>
                                         </div>
                                     </div>
                                 </>
@@ -80,7 +119,7 @@ const Shop = ({shop, Filter, allcaterfilter, addToCart}) => {
             </div>
         </div>
    </div>
-   
+   </>
   )
 }
 

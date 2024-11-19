@@ -156,3 +156,30 @@
     font-weight: 600;
     cursor: pointer;
 }
+ 
+.cart .bottom {
+    margin-left: 30px;
+}
+.cart .bottom .total h4
+{
+    font-size: 22px;
+    color: #cd176c;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+.cart .bottom button
+{
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    background: none;
+    background: #fed700;
+    color: #232323;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
