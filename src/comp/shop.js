@@ -10,8 +10,8 @@ import Homeproduct from './home_products';
 
 
 const Shop = ({shop, Filter, allcaterfilter, addToCart}) => {
-    console.log("Shop Products:", shop);
-    // Toggle Product deail
+    
+    // Toggle Product detail
 
     const [showDetail, setShowDetail] = useState(false);
     // Detail page data
@@ -22,10 +22,13 @@ const Shop = ({shop, Filter, allcaterfilter, addToCart}) => {
 
     // Showimg detail box
     const detailpage = (product) => {
-        setDetail([{product}])
+        const detailData = ([{product}]);
+        const productDetail = detailData[0]['product'];
+        //  console.log(productDetail);
+         setDetail(productDetail)
         setShowDetail(true)
     }
-    console.log(setDetail())
+   
     const closeDetails = () => {
         setShowDetail(false)
     }
@@ -40,7 +43,7 @@ const Shop = ({shop, Filter, allcaterfilter, addToCart}) => {
         </button>
         <div className='container'>
             <div className='imgBox'>
-                <img src={Homeproduct.images} alt=''></img>
+                <img src={detail.images} alt=''></img>
             </div>
         </div>
    </div>
@@ -107,7 +110,7 @@ const Shop = ({shop, Filter, allcaterfilter, addToCart}) => {
                                         <div className='detail'>
                                             <h3>{curElm.Name}</h3>
                                             <p>€ {curElm.price}</p>
-                                            <button onClick={detailpage }>Add to cart</button>
+                                            <button onClick={() => detailpage(curElm)}>Add to cart</button>
                                         </div>
                                     </div>
                                 </>
