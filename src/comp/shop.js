@@ -45,6 +45,16 @@ const Shop = ({shop, Filter, allcaterfilter, addToCart}) => {
             <div className='imgBox'>
                 <img src={detail.images} alt=''></img>
             </div>
+            <div className='info'>
+                <div>
+                    <h4># {detail.cat}</h4>
+                    <h2>{detail.Name}</h2>
+                    <p>Oak tree</p>
+                    <h3>€ {detail.price}</h3>
+                    <button onClick={() => addToCart(detail)}
+                    >Add to cart</button>
+                </div>
+            </div>
         </div>
    </div>
     </>
