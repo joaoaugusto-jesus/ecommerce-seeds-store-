@@ -92,7 +92,7 @@ const Nav = ({search, setSearch, searchProduct}) => {
                     <Link to='/cart' className='link'>Cart</Link>
                     <Link to='/collection' className='link'>Collection</Link>
                     <Link to='/about' className='link'>About</Link>
-                    <Link to='/contact' className='link'>contact</Link>
+                    <Link to='/contact' className='link'>Contact</Link>
                 </li>
             </ul>
            </div>

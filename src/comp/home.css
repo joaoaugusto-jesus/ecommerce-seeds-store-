@@ -21,15 +21,16 @@
     background-repeat:no-repeat;
     background-color: #bcc7bb;
     background-size: cover;
-    padding: 50px 60px;
+    padding: 60px 20px;
 }
 
 .home .topBanner .contant
 {
-    width: 100%;
+    width: 40%;
+    height: auto;
     position: relative;
-    top: 20%;
-    padding: 10px 0px;
+   
+   
 }
 
 .home .topBanner .contant h3
@@ -46,19 +47,19 @@
     color: #232323;
     letter-spacing: 1px;
     font-size: 32px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+   
 }
 
 .home .topBanner .contant p
 {
     color: #232323;
     letter-spacing: 1px;
-    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 .home .topBanner .contant .link 
-{
+{   
+    
     font-size: 14px;
     font-weight: 600;
     padding: 10px;
@@ -86,6 +87,7 @@
 {
     max-width: 100%;
     display: flex;
+    justify-content: space-evenly;
     
 }
 
@@ -93,17 +95,19 @@
 {
 
     width: 100%;
+    padding: 5px;
 }
 
 .home .trending .container .leftBox .header
 {
-    margin-top: 20px;
+    margin: 20px 0 0 45px;
     display: flex;
     max-width: 80%;
     background: #f6f7f8;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border-radius: 14px;
+;
 }
 
 .home .trending .container .leftBox .header .heading h2
@@ -160,7 +164,7 @@
 .home .trending .container .leftBox .products button
 {
     margin-top: 20px;
-    margin-left: 45%;
+    margin-left: 50%;
     padding: 10px 30px;
     background: none;
     outline: none;
@@ -321,7 +325,7 @@
 {
     
    
-    width: 200px;
+    width: 100%;
     height: auto;
 }
 
@@ -361,10 +365,11 @@
 
 .home .trending .container .rightBox .right-container .newsletter
 {
-    width: 91%;
+    width: 100%;
     background:#f6f7f8;
     margin-top: 20px;
     padding: 10px 10px;
+    
 }
 
 
@@ -404,12 +409,13 @@
     outline: none;
     border: 1px solid #8a8a8a;
     color: #232323;
+    padding: 5px;
 }
 
 .home .trending .container .rightBox .right-container .newsletter .form button
 {
     margin-top: 10px;
-    margin-left: 60px;
+    width: 100%;
     padding: 10px 10px;
     border: none;
     background: none;
@@ -425,22 +431,27 @@
     margin-top: 20px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
     
 }
 
 
 .home .trending .container .rightBox .right-container .newsletter .form .iconBox .icon
 {
-    padding: 10px 10px;
-    width: 16px;
-    height: 16px;
+    
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     border: 1px solid #cd1e76;
     color: #cd1e76;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     cursor: pointer;
     transition: 0.5s;
+    padding: 4px;
+    
 }
 
 
@@ -464,18 +475,20 @@
 
 .home .banners .container .leftBox
 {
-    width: 24%;
+    width: 25%;
 }
 .home .banners .container .leftBox img
 {
     width: 100%;
+    padding: 5px;
+
     
     
 }
 
 .home .banners .container .rightBox
 {
-    width: 75%;
+    width: 100%;
 }
 
 .home .banners .container .rightBox .top
@@ -488,15 +501,17 @@
 }
 .home .banners .container .rightBox img
 {
+    max-width: 98%;
     object-fit: cover;
-    width: 98%;
+    padding: 5px;
+    
     height: auto;
 }
 
 .home .producType 
 {
     
-    width: 99%;
+    width: 100%;
     
 }
 
@@ -539,7 +554,7 @@
     padding: 10px 10px;
     border: 1px solid #f6f7f8;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     
 }
 
@@ -551,7 +566,9 @@
 {   
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
+    padding: 0 10px 10px 10px;
+    object-fit: contain;
+    
     
 }
 
@@ -562,7 +579,8 @@
 }
 
 .detail h3
-{
+{   
+    margin-left: 5px;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
@@ -573,6 +591,7 @@
  .detail p
 {
     margin-top: 5px;
+    margin-left: 5px;
     color: #cd1e76;
     letter-spacing: 1px;
     font-weight: 600;
