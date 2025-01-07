@@ -142,3 +142,13 @@
     color: #cd1e76;
  ;
 }
+
+
+@media (max-width: 900px) {
+
+    .footer .container .leftBox .detail h3
+    {
+        font-size: 14px;
+        
+    }
+}
