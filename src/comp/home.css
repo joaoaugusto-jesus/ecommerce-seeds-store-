@@ -1,7 +1,7 @@
 *
 {
-    margin: 30px;
-    padding: 6px;
+    margin: 0px;
+    padding: 0px;
     font-family: sans-serif;
     box-sizing: border-box;
 }
@@ -9,26 +9,30 @@
 .home
 {
     width: 100%;
-    
+   
 }
 
 .home .topBanner
 {
+    
+    display: flex;
+    flex-wrap: wrap;
     max-width: 100%;
-   
     margin-top: 10px;
     background-image: url('../images/Novo Projeto.webp');
+    background-size: cover;
     background-repeat:no-repeat;
     background-color: #bcc7bb;
-    background-size: cover;
+    background-position: end;
     padding: 60px 20px;
+    box-sizing: border-box;
 }
 
 .home .topBanner .contant
-{
-    width: 40%;
-    height: auto;
-    position: relative;
+{   
+    
+    width: 100%;
+    
    
    
 }
@@ -502,7 +506,7 @@
 .home .banners .container .rightBox img
 {
     max-width: 98%;
-    object-fit: cover;
+    object-fit: contain;
     padding: 5px;
     
     height: auto;
@@ -518,22 +522,24 @@
 .home .producType .container
 {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .home .producType .container .box
 {
-    width: 360px;
+    flex: 1 1 calc(33.333% - 20px); /* Three items per row, adjust spacing */
     height: auto;
     border: 3px solid #f6f7f8;
-    padding: 10px 10px;
-    
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .home .producType .container .box .header 
 {
-   width: 95%;
+   width: 100%;
    height: 50px;
    background: #f6f6f6;
    padding: 10px 10px;
@@ -626,3 +632,24 @@
     
    
 }
+
+@media (max-width: 650px) {
+    .home .topBanner {
+        
+        padding: 20px;
+        background-size: contain;
+        background-position: right;
+        
+        
+    }
+    .home .topBanner .contant h2
+    {
+        font-size: 18px;
+    }
+    .home .topBanner .contant p
+    {
+        font-size: 14px;
+        color: #fff;
+    }
+}
+

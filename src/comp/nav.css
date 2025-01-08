@@ -46,7 +46,7 @@
     height: 45px;
     width: auto;
     cursor: pointer;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .header .midHeader .searchBox input
@@ -144,6 +144,9 @@
     padding: 10px 10px;
     background: #fff;
     border-radius: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 
 .header .lastHeader .userProfile .icon svg
@@ -292,5 +295,18 @@
     .header .lastHeader .offer p
     {
         font-size: 8px;
+    }    
+}
+
+@media (max-width: 550px) {
+
+    .header .midHeader
+    {
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+    .header .lastHeader .offer p
+    {
+        font-size: 6px;
     }    
 }
