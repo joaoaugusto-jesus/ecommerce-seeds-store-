@@ -310,7 +310,7 @@
 
 }
 
-.home .trending .container .rightBox .right-container .testimonial .header .head h3
+.home .trending .container .rightBox .right-container .testimonial .head h3
 {
     text-align: center;
     color: #232323;
@@ -651,5 +651,48 @@
         font-size: 14px;
         color: #fff;
     }
+    .home .trending .container .rightBox .right-container .testimonial .head h3
+    {
+        font-size: 8px;
+    }
+    .home .trending .container .rightBox .right-container .newsletter .head h3
+    {
+        font-size: 10px;
+    }
+    .home .trending .container .rightBox .right-container .newsletter .form .iconBox .icon 
+    {
+        width: 18px;
+        height: 18px;
+        padding: 0;
+    }
 }
 
+@media (max-width: 350px) {
+
+ 
+    .home .trending .container .leftBox .header
+    {
+        margin: 6px 0 0 10px; 
+    }
+    .home .trending .container .leftBox .header .cate h3
+    {
+        font-size: 12px;
+
+    }
+    
+
+    .home .trending .container .rightBox .right-container .testimonial .head h3
+    {
+        font-size: 6px;
+    }
+    .home .trending .container .rightBox .right-container .newsletter .head h3
+    {
+        font-size: 6px;
+    }
+
+    .home .trending .container .rightBox .right-container .newsletter .form .iconBox .icon 
+    {
+        width: 18px;
+        height: 18px;
+    }
+}
