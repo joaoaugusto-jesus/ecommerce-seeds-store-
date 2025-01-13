@@ -1,7 +1,6 @@
 import React from 'react'
 import './footer.css'
 import { FaHeadphonesAlt, FaPiggyBank, FaShippingFast, FaWallet} from 'react-icons/fa';
-import logo from '../images/DALL·E 2024-10-21 22.11.18 - A modern logo for an e-commerce store specializing in seeds. The logo should feature a stylized seed or sprout as the central element, representing gr.webp';
 
 
 const Footer = () => {
@@ -49,7 +48,7 @@ const Footer = () => {
             </div>
                 <div className='rightBox'>
                     <div className='header'>
-                        <img alt='logo' src={logo} />
+                        <img alt='logo' src='assets/images/logo-store.webp' />
                         <p>lorem ip...</p>
 
                     </div>

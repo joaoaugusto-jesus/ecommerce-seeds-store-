@@ -1,12 +1,11 @@
 import React from 'react'
 import './shop.css';
-import novo from '../images/Novo Projeto.webp'
-import terra from '../images/terra.webp'
+
 import { FaHeart } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { useState } from 'react';
-import Homeproduct from './home_products';
+
 
 
 const Shop = ({shop, Filter, allcaterfilter, addToCart}) => {
@@ -86,14 +85,14 @@ const Shop = ({shop, Filter, allcaterfilter, addToCart}) => {
                 </div>
                 <div className='banner'>
                     <div className='imgBox'>
-                        <img src={terra} alt="composto bio"  />
+                        <img src='/assets/images/terra.webp' alt="composto bio" />
                     </div>
                 </div>
             </div> 
             <div className='rightBox'>
                 <div className='banner'>
                     <div className='imgBox'>
-                        <img src={novo} alt='chá a granel' />
+                        <img src='/assets/images/novo-projeto.webp' alt='chá a granel' />
                     </div>
                 </div>
            

@@ -68,7 +68,11 @@ const Home = ({addToCart}) => {
             <h2>Biological</h2>
             <p>30% off at your first order</p>
             <Link to='/shop' className='link'>Shop Now</Link>
+          
+          
           </div>
+          <img src='assets/images/novo-projeto.webp' alt='banner'
+          ></img>
         </div>
         <div className='trending'>
           <div className='container'>
@@ -168,15 +172,15 @@ const Home = ({addToCart}) => {
                   <div className='container'>
                     <div className='leftBox'>
                       <div className='box'>
-                        <img src='/biofertlizer.webp' alt='banner'></img>
+                        <img src='assets/images/biofertlizer.webp' alt='banner'></img>
                       </div>
                       <div className='box'>
-                        <img src='sale.webp' alt='sale discount 30%'></img>
+                        <img src='assets/images/sale.webp' alt='sale discount 30%'></img>
                       </div>
                     </div>
                     <div className='rightBox'>
                       <div className='top'>
-                        <img src='banner.webp' alt=''></img>
+                        <img src='assets/images/banner.webp' alt=''></img>
                       </div>
                     </div>
                   </div>

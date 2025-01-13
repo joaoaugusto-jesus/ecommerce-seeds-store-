@@ -3,7 +3,6 @@ import {MdLocalShipping} from 'react-icons/md';
 import { IoSearch } from "react-icons/io5";
 import { CiLogin, CiLogout } from "react-icons/ci";
 import { RiUser5Fill } from "react-icons/ri";
-import logo from '../images/DALL·E 2024-10-21 22.11.18 - A modern logo for an e-commerce store specializing in seeds. The logo should feature a stylized seed or sprout as the central element, representing gr.webp';
 import { useAuth0 } from "@auth0/auth0-react";
 import { Link } from 'react-router-dom';
 import './nav.css';
@@ -25,8 +24,9 @@ const Nav = ({search, setSearch, searchProduct}) => {
             </div>
        </div>
        <div className='midHeader'>
-       <div className='logo' >
-            <img src={logo} alt="logo" />            </div>
+            <div className='logo' >
+                    <img src='assets/images/logo-store.webp' alt="logo" />
+            </div>
             <div className='searchBox'>
                <input type='text' value={search} placeholder='Search' onChange={(e) => setSearch(e.target.value)} /> 
                <button onClick={searchProduct}>

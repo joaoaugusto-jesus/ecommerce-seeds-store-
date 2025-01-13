@@ -15,28 +15,29 @@
 .home .topBanner
 {
     
-    display: flex;
-    flex-wrap: wrap;
     max-width: 100%;
     margin-top: 10px;
-    background-image: url('../images/Novo Projeto.webp');
-    background-size: cover;
-    background-repeat:no-repeat;
     background-color: #bcc7bb;
-    background-position: end;
-    padding: 60px 20px;
-    box-sizing: border-box;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .home .topBanner .contant
 {   
+    width: 30%;
+    padding: 20px;
     
-    width: 100%;
-    
-   
-   
 }
+.home .topBanner img
+{  
+    width: 65%;
+    max-height: 380px;
+    height: auto;
 
+}
 .home .topBanner .contant h3
 {
     text-transform: capitalize;
